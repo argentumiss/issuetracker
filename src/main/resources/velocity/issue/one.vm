@@ -1,0 +1,13 @@
+#parse("/velocity/layout.vm")
+#@mainLayout()
+    #if($issue)
+    <h1>$issue.getIssueId())</h1>
+    <h2>Status: $issue.getStatus()</h2>
+    <h2>Start date: $issue.getDate()</h2>
+##    <h2>Author: $user.getUserByUsername($issue.getUser))</h2>
+    <h2>Author: $user.getUsername()</h2>
+
+    #else
+    <h1>$msg.get("ISSUES_ISSUE_NOT_FOUND")</h1>
+    #end
+#end

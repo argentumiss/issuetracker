@@ -1,0 +1,12 @@
+#* @implicitly included *#
+#* @vtlvariable name="WebPath" type="com.axmor.util.Path.Web" *#
+#* @vtlvariable name="msg" type="com.axmor.util.MessageBundle" *#
+#* @vtlvariable name="issues" type="java.util.ArrayList<com.axmor.issue.Issue>" *#
+#* @vtlvariable name="issue" type="com.axmor.issue.Issue" *#
+#* @vtlvariable name="users" type="java.util.ArrayList<com.axmor.user.User>" *#
+#* @vtlvariable name="user" type="com.axmor.user.User" *#
+#* @vtlvariable name="currentUser" type="java.lang.String" *#
+#* @vtlvariable name="loggedOut" type="java.lang.String" *#
+#* @vtlvariable name="authenticationFailed" type="java.lang.String" *#
+#* @vtlvariable name="authenticationSucceeded" type="java.lang.String" *#
+#* @vtlvariable name="loginRedirect" type="java.lang.String" *#

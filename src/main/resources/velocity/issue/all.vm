@@ -1,0 +1,22 @@
+#parse("/velocity/layout.vm")
+#@mainLayout()
+<h1>$msg.get("ISSUES_HEADING_ALL")</h1>
+##<div class="row row-3">
+<div>
+    <table>
+        <caption>Issue Tracker</caption>
+        <tr>
+            <th>Issue</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+        #foreach($issue in $issues)
+            <tr>
+                <td><a href="$WebPath.getISSUES()$issue.getIssueId()">$issue.getTitle()</a></td>
+                <td>$issue.getStatus()</td>
+                <td>$issue.getDate()</td>
+            </tr>
+        #end
+    </table>
+</div>
+#end
